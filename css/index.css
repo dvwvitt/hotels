@@ -1,0 +1,54 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  margin: 0;
+}
+
+/* Estilos generales para el encabezado */
+.header {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/paisajeHotels.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.007);
+  z-index: -1;
+}
+/* Estilos para el h1 dentro del encabezado */
+.header-continer title {
+  color: white;
+  font-size: 45rem;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Estilos para el p dentro del encabezado */
+.header-continer .message1 {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 80%; /* Posición vertical abajo del h1 */
+  left: 10%; /* Posición horizontal en el centro del encabezado */
+  transform: translate(-50%, -50%); /* Centrar el p exactamente en el centro */
+  z-index: 1;
+}
+/* Estilos para el p dentro del encabezado */
+.header-continer .message2 {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 90%; /* Posición vertical abajo del h1 */
+  left: 15%; /* Posición horizontal en el centro del encabezado */
+  transform: translate(-50%, -50%); /* Centrar el p exactamente en el centro */
+  z-index: 1;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+  z-index: 0; /* Ubica el pseudo-elemento detrás del título y el párrafo */
+}
